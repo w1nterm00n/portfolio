@@ -283,6 +283,74 @@ html, body {
 }
 /*CONTACT ME SECTION*/
 
+/*FOOTER*/
+.footerWrapper{
+    .footerTriangles{
+        position: relative;
+        padding-top: 50px;
+        .dark-triangles{
+            display: flex;
+            .border-triangle-smaller {
+                width: 0;
+                height: 0;
+                border-left: 20vw solid transparent;
+                border-right: 20vw solid transparent;
+                border-bottom: 50px solid #006BB7; 
+            }
+            .border-triangle-bigger {
+                width: 0;
+                height: 0;
+                border-left: 30vw solid transparent;
+                border-right: 30vw solid transparent;
+                border-bottom: 50px solid #006BB7; 
+            }
+        }
+        .light-triangle{
+            width: 0;
+            height: 0;
+            border-left: 35vw solid transparent;
+            border-right: 35vw solid transparent;
+            border-bottom: 100px solid #7BB0D5; 
+            position: absolute;
+            top: 0;
+            left: -100px;
+            z-index: -1;
+        }
+    }
+    
+    footer{
+        position: relative;
+        background-color: #006BB7;
+        height: 150px;
+        .footerContent{
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            align-items: center;
+            .codedWithLove{
+                display: flex;
+                flex: 1;
+                align-items: center;
+                margin-left: 10px;
+                gap: 10px;
+                p{
+                    color: #FFF;
+                }
+            }
+            .info{
+                display: flex;
+                flex: 1;
+                justify-content: space-around;
+                align-items: center;
+                .year, a{
+                    color: #FFF;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+/*FOOTER*/
 
 @media (min-width: 680px) {
     .navbarWrapper{
@@ -334,6 +402,36 @@ html, body {
         .ContactCardArea{
             width: 50%;
             margin: 0 !important;
+        }
+    }
+    .footerWrapper{
+        footer{
+            .footerContent{
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+                align-items: center;
+                .codedWithLove{
+                    display: flex;
+                    flex: 1;
+                    align-items: center;
+                    margin-left: 50px;
+                    gap: 10px;
+                    p{
+                        font-size: 20px;
+                    }
+                }
+                .info{
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 90px;
+                    .year, a{
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
 }
@@ -520,6 +618,18 @@ html, body {
     }
 }
 
+@media (max-width: 500px) {
+    .footerWrapper{
+        .footerTriangles{
+            .light-triangle{
+                left: -50px;
+            }
+        }
+        footer{
+            height: 90px !important;
+        }
+    }
+}
 
 /*HERO SECTION*/
 
