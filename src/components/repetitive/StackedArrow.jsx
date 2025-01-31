@@ -1,30 +1,30 @@
-function StackedArrow () {
-    return (
-      <>
-        <div className="stackedArrow">
+import { useEffect, useState } from "react";
 
-        <div className="arrow-container">
-            <div className="arrow arrow1">
-                <arrow className="right"></arrow>
-                <arrow className="left"></arrow>
-            </div>
-            <div className="arrow arrow2">
-                <arrow className="right"></arrow>
-                <arrow className="left"></arrow>
-            </div>
-            <div className="arrow arrow3">
-                <arrow className="right"></arrow>
-                <arrow className="left"></arrow>
-            </div>
-            <div className="arrow arrow4">
-                <arrow className="right"></arrow>
-                <arrow className="left"></arrow>
-            </div>
-        </div>
+function StackedArrow() {
+  const [arrowClasses, setArrowClasses] = useState(["arrow1", "arrow2", "arrow3", "arrow4"]);
 
-        </div>
-      </>
-    );
-  }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setArrowClasses((prev) => {
+        return [prev[3], prev[0], prev[1], prev[2]]; // Меняем порядок классов
+      });
+    }, 800); // Интервал 2 секунды
+
+    return () => clearInterval(interval); // Очищаем интервал при размонтировании компонента
+  }, []);
+
+  return (
+    <div className="stackedArrow">
+      <div className="arrow-container">
+        {arrowClasses.map((className, index) => (
+          <div key={index} className={`arrow ${className}`}>
+            <div className="right"></div>
+            <div className="left"></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default StackedArrow;

@@ -1,4 +1,5 @@
 import HeroSection from './components/semantic/HeroSection'
+import AboutMeSection from './components/semantic/AboutMeSection'
 import './Styles.css'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <HeroSection></HeroSection>
+      <AboutMeSection></AboutMeSection>
     </>
   )
 }
