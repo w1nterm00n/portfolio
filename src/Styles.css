@@ -229,6 +229,15 @@ body {
     margin-top: 100px;
     margin-right: 10px;
   }
+  .AboutMeSection .ContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .AboutMeSection .ContentWrapper .MyEducationWrapper {
+    max-width: 50%;
+    margin-top: 0 !important;
+  }
 }
 @media (min-width: 900px) {
   .HeroSection .HeroSectionWrapper .WelcomeBox .circle {
@@ -263,6 +272,43 @@ body {
     bottom: 0px;
     left: -25px;
     padding: 20px 10px;
+  }
+  .AboutMeSection .ContentWrapper .MySkillsWrapper .TextAboutSkills {
+    margin-top: 40px;
+    margin-bottom: 120px;
+  }
+  .AboutMeSection .ContentWrapper .MySkillsWrapper .TextAboutSkills h3 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+  }
+  .AboutMeSection .ContentWrapper .MySkillsWrapper .TextAboutSkills ul {
+    margin-left: 50px;
+  }
+  .AboutMeSection .ContentWrapper .MySkillsWrapper .TextAboutSkills ul li {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+  .AboutMeSection .ContentWrapper .MySkillsWrapper .circles .dark_circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -80px;
+    top: -50px;
+  }
+  .AboutMeSection .ContentWrapper .MySkillsWrapper .circles .light_circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -110px;
+    top: -80px;
+  }
+  .AboutMeSection .ContentWrapper .MyEducationWrapper {
+    margin-top: 100px !important;
+  }
+  .AboutMeSection .ContentWrapper .MyEducationWrapper .Timelines .TimelineWrapper {
+    margin-bottom: 40px !important;
+    max-width: 80%;
   }
   .stackedArrow .arrow-container {
     gap: 22px !important;
