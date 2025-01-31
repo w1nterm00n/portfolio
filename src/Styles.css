@@ -16,8 +16,9 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
+html, body {
   font-family: "Mooli", sans-serif;
+  overflow-x: hidden;
 }
 
 /*NAVBAR*/
@@ -206,6 +207,67 @@ body {
 }
 
 /*ABOUT ME SECTION*/
+/*CONTACT ME SECTION*/
+.ContactMeSection {
+  margin-bottom: 100px;
+}
+.ContactMeSection .circle {
+  display: none;
+}
+.ContactMeSection .arrowSection {
+  display: none;
+}
+.ContactMeSection .ContactCardArea {
+  width: 80%;
+  margin: 0 auto;
+}
+.ContactMeSection .ContactCardArea .ContactCard {
+  background-color: #D3E1EE;
+  border: 1px solid #000;
+  border-radius: 59px;
+  padding: 20px 40px;
+}
+.ContactMeSection .ContactCardArea .ContactCard .StarTitleWrapper {
+  margin: 20px auto 40px auto;
+}
+.ContactMeSection .ContactCardArea .ContactCard .StarTitleWrapper .StarTitle .decoration .ellipse {
+  left: 5px !important;
+}
+.ContactMeSection .ContactCardArea .ContactCard .StarTitleWrapper .StarTitle .decoration .star {
+  left: 10px !important;
+}
+.ContactMeSection .ContactCardArea .ContactCard p {
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.ContactMeSection .ContactCardArea .ContactCard .socialMediaSection .email {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.ContactMeSection .ContactCardArea .ContactCard .socialMediaSection .email p {
+  margin-bottom: 0 !important;
+  font-size: 14px;
+}
+.ContactMeSection .ContactCardArea .ContactCard .socialMediaSection .email img {
+  display: block;
+}
+.ContactMeSection .ContactCardArea .ContactCard .socialMediaSection .socialMediaLinks {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.ContactMeSection .ContactCardArea .ContactCard .socialMediaSection .socialMediaLinks .socialMedia {
+  width: 25px;
+  height: 25px;
+}
+
+/*CONTACT ME SECTION*/
 @media (min-width: 680px) {
   .navbarWrapper {
     padding-top: 20px;
@@ -237,6 +299,20 @@ body {
   .AboutMeSection .ContentWrapper .MyEducationWrapper {
     max-width: 50%;
     margin-top: 0 !important;
+  }
+  .ContactMeSection {
+    display: flex;
+    justify-content: space-around;
+  }
+  .ContactMeSection .arrowSection {
+    display: block;
+  }
+  .ContactMeSection .arrowSection .stackedArrow {
+    transform: scaleY(-1);
+  }
+  .ContactMeSection .ContactCardArea {
+    width: 50%;
+    margin: 0 !important;
   }
 }
 @media (min-width: 900px) {
@@ -342,6 +418,54 @@ body {
   .resumeArea {
     margin-right: 160px !important;
     margin-bottom: 50px !important;
+  }
+  .ContactMeSection {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+  }
+  .ContactMeSection .circle {
+    display: block;
+    width: 450px;
+    height: 450px;
+    background-color: #006BB7;
+    border: 6px solid #ACCADF;
+    border-radius: 100%;
+    position: absolute;
+    top: -300px;
+    right: -120px;
+    z-index: -1;
+  }
+  .ContactMeSection .arrowSection {
+    margin-left: -100px !important;
+    margin-top: -250px !important;
+  }
+  .ContactMeSection .ContactCardArea {
+    width: 40%;
+    margin: 0 !important;
+  }
+  .ContactMeSection .ContactCardArea .ContactCard {
+    padding: 60px 60px !important;
+  }
+  .ContactMeSection .ContactCardArea .ContactCard .desc {
+    max-width: 70% !important;
+    margin: 50px auto !important;
+    line-height: 30px;
+  }
+  .ContactMeSection .ContactCardArea .ContactCard .socialMediaSection {
+    display: flex;
+    justify-content: space-between;
+  }
+  .ContactMeSection .ContactCardArea .ContactCard .socialMediaSection .email {
+    margin: 0 !important;
+  }
+  .ContactMeSection .ContactCardArea .ContactCard .socialMediaSection .socialMediaLinks {
+    margin-top: 0 !important;
+    margin-top: 10px;
+    display: flex;
+    width: 50%;
   }
 }
 /*HERO SECTION*/

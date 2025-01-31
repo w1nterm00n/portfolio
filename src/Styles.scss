@@ -15,9 +15,11 @@
     font-style: normal;
 }
   
-body {
+html, body {
     font-family: 'Mooli', sans-serif;
+    overflow-x: hidden;
 }
+
 
 /*NAVBAR*/
 .navbarWrapper{
@@ -214,7 +216,72 @@ body {
 }
 /*ABOUT ME SECTION*/
 
+/*CONTACT ME SECTION*/
+.ContactMeSection{
+    margin-bottom: 100px;
+    .circle{
+        display: none;
+    }
+    .arrowSection{
+        display: none;
+    }
 
+    .ContactCardArea{
+        width: 80%;
+        margin: 0 auto;
+        .ContactCard{
+            background-color: #D3E1EE;
+            border: 1px solid #000;
+            border-radius: 59px;
+            padding: 20px 40px;
+            .StarTitleWrapper{
+                margin: 20px auto 40px auto;
+                .StarTitle{
+                    .decoration{
+                        .ellipse{
+                            left: 5px !important;
+                        }
+                        .star{
+                            left: 10px !important;
+                        }
+                    }
+                }
+            }
+            p{
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 35px;
+            }
+            .socialMediaSection{
+                .email{
+                    width: fit-content;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    flex-wrap: wrap;
+                    p{
+                        margin-bottom: 0 !important;
+                        font-size: 14px;
+                    }
+                    img{
+                        display: block;
+                    }
+                }
+                .socialMediaLinks{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    .socialMedia{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*CONTACT ME SECTION*/
 
 
 @media (min-width: 680px) {
@@ -253,6 +320,20 @@ body {
                 max-width: 50%;
                 margin-top: 0 !important;
             }
+        }
+    }
+    .ContactMeSection{
+        display: flex;
+        justify-content: space-around;
+        .arrowSection{
+            display: block;
+            .stackedArrow{
+                transform: scaleY(-1);
+            }
+        }
+        .ContactCardArea{
+            width: 50%;
+            margin: 0 !important;
         }
     }
 }
@@ -335,8 +416,6 @@ body {
             }
             .MyEducationWrapper{
                 margin-top: 100px !important;
-                // max-width: 50%;
-                // margin-top: 0 !important;
                 .Timelines{
                     .TimelineWrapper{
                         margin-bottom: 40px !important;
@@ -389,6 +468,55 @@ body {
     .resumeArea{
         margin-right: 160px !important;
         margin-bottom: 50px !important;
+    }
+    .ContactMeSection{
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+        gap: 40px;
+        position: relative;
+        .circle{
+            display: block;
+            width: 450px;
+            height: 450px;
+            background-color: #006BB7;
+            border: 6px solid #ACCADF;
+            border-radius: 100%;
+            position: absolute;
+            top: -300px;
+            right: -120px;
+            z-index: -1;
+        }
+        .arrowSection{
+            margin-left: -100px !important;
+            margin-top: -250px !important;
+        }
+        .ContactCardArea{
+            width: 40%;
+            margin: 0 !important;
+            .ContactCard{
+                padding: 60px 60px !important;
+                .desc{
+                    max-width: 70% !important;
+                    margin: 50px auto !important;
+                    line-height: 30px;
+                }
+                .socialMediaSection{
+                    display: flex;
+                    justify-content: space-between;
+                    .email{
+                        margin: 0 !important;
+
+                    }
+                    .socialMediaLinks{
+                        margin-top: 0 !important;
+                        margin-top: 10px;
+                        display: flex;
+                        width: 50%;
+                    }
+                }
+            }
+        }
     }
 }
 
