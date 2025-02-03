@@ -122,6 +122,141 @@ html, body {
 }
 /*HERO SECTION*/
 
+/*MY WORKS SECTION*/
+.MyWorksWrapper{
+    .titleWrapper{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .worksContainer{
+        .WorkExample{
+            .WorkExampleWrapper{
+                width: 80%;
+                background-color: #ACCADF;
+                margin: 0 auto;
+                padding: 30px;
+                border-radius: 10px 100px 10px 100px;
+                .logoWrapper{
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 2px;
+                    background-color: #a1a887;
+                    margin: 30px auto;
+                    position: relative;
+                    .corner {
+                        position: absolute;
+                        width: 60px;
+                        height: 60px;
+                    }
+                    
+                    /* Верхний левый угол */
+                    .top-left {
+                        top: -5px;
+                        left: -5px;
+                        border-top: 1px solid black;
+                        border-left: 1px solid black;
+                    }
+                    
+                    /* Верхний правый угол */
+                    .top-right {
+                        top: -5px;
+                        right: -5px;
+                        border-top: 1px solid black;
+                        border-right: 1px solid black;
+                    }
+                    
+                    /* Нижний левый угол */
+                    .bottom-left {
+                        bottom: -5px;
+                        left: -5px;
+                        border-bottom: 1px solid black;
+                        border-left: 1px solid black;
+                    }
+                    
+                    /* Нижний правый угол */
+                    .bottom-right {
+                        bottom: -5px;
+                        right: -5px;
+                        border-bottom: 1px solid black;
+                        border-right: 1px solid black;
+                    }
+                }
+                .nameOfWebsite{
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 15px;
+                    .stackedTriangles{
+                        position: relative;
+                        width: 70px; 
+                        height: 50px;
+                        .triangle {
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-top: 25px solid transparent;
+                            border-bottom: 25px solid transparent;
+                        }
+                        .filled {
+                            border-left: 45px solid #006BB7;
+                            left: 0;
+                        }
+                        .first{
+                            position: absolute;
+                            width: 45px;
+                            height: 49px;
+                            top: 0px;
+                            right: 14px;
+                        }
+                        .second{
+                            position: absolute;
+                            width: 45px;
+                            height: 49px;
+                            top: 0px;
+                            right: 5px;
+                        }
+                    }
+                    h4{
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                }
+                .desc{
+                    max-width: 90%;
+                    margin-bottom: 25px;
+                    line-height: 22px;
+                }
+                .viewMore{
+                    display: flex;
+                    gap: 5px;
+                    margin-bottom: 25px;
+                    a{
+                        font-size: 16px;
+                        color: #000;
+                        text-decoration: underline;
+                    }
+                    .viewMoreArrows{
+                        transition: transform 0.3s ease;
+                        .second{
+                            margin-left: -6px;
+                        }
+                    }
+                    .opened{
+                        transform: rotate(88deg);
+                    }
+                }
+            }
+            .mobileScreen{
+                width: 80%;
+                height: 300px;
+                background-color: #e0e4e7;
+            }
+        }
+    }
+}
+/*MY WORKS SECTION*/
+
 /*ABOUT ME SECTION*/
 .AboutMeSection{
     margin-top: 70px;
@@ -430,6 +565,16 @@ html, body {
                     .year, a{
                         font-size: 18px;
                     }
+                }
+            }
+        }
+    }
+    .MyWorksWrapper{
+        .worksContainer{
+            .WorkExample{
+                display: flex;
+                .WorkExampleWrapper{
+
                 }
             }
         }

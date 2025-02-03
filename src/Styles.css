@@ -115,6 +115,131 @@ html, body {
 }
 
 /*HERO SECTION*/
+/*MY WORKS SECTION*/
+.MyWorksWrapper .titleWrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper {
+  width: 80%;
+  background-color: #ACCADF;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px 100px 10px 100px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .logoWrapper {
+  width: 100%;
+  height: 200px;
+  border-radius: 2px;
+  background-color: #a1a887;
+  margin: 30px auto;
+  position: relative;
+  /* Верхний левый угол */
+  /* Верхний правый угол */
+  /* Нижний левый угол */
+  /* Нижний правый угол */
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .logoWrapper .corner {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .logoWrapper .top-left {
+  top: -5px;
+  left: -5px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .logoWrapper .top-right {
+  top: -5px;
+  right: -5px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .logoWrapper .bottom-left {
+  bottom: -5px;
+  left: -5px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .logoWrapper .bottom-right {
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .nameOfWebsite {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .nameOfWebsite .stackedTriangles {
+  position: relative;
+  width: 70px;
+  height: 50px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .nameOfWebsite .stackedTriangles .triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .nameOfWebsite .stackedTriangles .filled {
+  border-left: 45px solid #006BB7;
+  left: 0;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .nameOfWebsite .stackedTriangles .first {
+  position: absolute;
+  width: 45px;
+  height: 49px;
+  top: 0px;
+  right: 14px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .nameOfWebsite .stackedTriangles .second {
+  position: absolute;
+  width: 45px;
+  height: 49px;
+  top: 0px;
+  right: 5px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .nameOfWebsite h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .desc {
+  max-width: 90%;
+  margin-bottom: 25px;
+  line-height: 22px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .viewMore {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .viewMore a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: underline;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .viewMore .viewMoreArrows {
+  transition: transform 0.3s ease;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .viewMore .viewMoreArrows .second {
+  margin-left: -6px;
+}
+.MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .viewMore .opened {
+  transform: rotate(88deg);
+}
+.MyWorksWrapper .worksContainer .WorkExample .mobileScreen {
+  width: 80%;
+  height: 300px;
+  background-color: #e0e4e7;
+}
+
+/*MY WORKS SECTION*/
 /*ABOUT ME SECTION*/
 .AboutMeSection {
   margin-top: 70px;
@@ -405,6 +530,9 @@ html, body {
   }
   .footerWrapper footer .footerContent .info .year, .footerWrapper footer .footerContent .info a {
     font-size: 18px;
+  }
+  .MyWorksWrapper .worksContainer .WorkExample {
+    display: flex;
   }
 }
 @media (min-width: 900px) {
