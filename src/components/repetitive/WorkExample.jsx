@@ -39,13 +39,17 @@ function WorkExample () {
                 </div>
 
                 {isExpanded && (
-                    <div className="mobileScreen">
+                    <div className="mobileScreen screenBorder mobileScreenDropDown">
                     <p>мобильный скриншот сайта</p>
                     </div>
                 )}
             </div>
 
-            <div className="mobileScreenFlex">
+            <div className="mobileScreen screenBorder mobileScreenFlex">
+                
+            </div>
+
+            <div className="desktopScreen screenBorder">
                 
             </div>
         </div>

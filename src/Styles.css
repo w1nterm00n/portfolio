@@ -120,6 +120,12 @@ html, body {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.MyWorksWrapper .worksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 100px;
+}
 .MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper {
   width: 80%;
   background-color: #ACCADF;
@@ -234,9 +240,24 @@ html, body {
   transform: rotate(88deg);
 }
 .MyWorksWrapper .worksContainer .WorkExample .mobileScreen {
-  width: 80%;
+  width: 270px;
   height: 300px;
   background-color: #e0e4e7;
+  margin: 0 auto;
+}
+.MyWorksWrapper .worksContainer .WorkExample .desktopScreen {
+  width: 500px;
+  height: 300px;
+  background-color: #e0e4e7;
+  margin: 0 auto;
+  display: none;
+}
+.MyWorksWrapper .worksContainer .WorkExample .mobileScreenFlex {
+  display: none;
+}
+.MyWorksWrapper .worksContainer .WorkExample .screenBorder {
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
 /*MY WORKS SECTION*/
@@ -534,6 +555,18 @@ html, body {
   .MyWorksWrapper .worksContainer .WorkExample {
     display: flex;
   }
+  .MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper {
+    width: 50%;
+  }
+  .MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper .viewMore {
+    display: none;
+  }
+  .MyWorksWrapper .worksContainer .WorkExample .mobileScreenFlex {
+    display: block;
+  }
+  .MyWorksWrapper .worksContainer .WorkExample .mobileScreenDropDown {
+    display: none;
+  }
 }
 @media (min-width: 900px) {
   .HeroSection .HeroSectionWrapper .WelcomeBox .circle {
@@ -686,6 +719,12 @@ html, body {
     margin-top: 10px;
     display: flex;
     width: 50%;
+  }
+  .MyWorksWrapper .worksContainer .WorkExample .WorkExampleWrapper {
+    width: 30%;
+  }
+  .MyWorksWrapper .worksContainer .WorkExample .desktopScreen {
+    display: block;
   }
 }
 @media (max-width: 500px) {

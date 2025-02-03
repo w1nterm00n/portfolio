@@ -11,6 +11,8 @@ function MyWorksSection () {
 
             <div className="worksContainer">
                 <WorkExample></WorkExample>
+                <WorkExample></WorkExample>
+                <WorkExample></WorkExample>
             </div>
             <LineSeparator></LineSeparator>
         </div>
