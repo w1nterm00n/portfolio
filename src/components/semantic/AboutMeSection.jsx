@@ -4,7 +4,7 @@ import LineSeparator from "../repetitive/LineSeparator";
 
 function AboutMeSection () {
     return (
-        <div className="AboutMeSection">
+        <div id="about" className="AboutMeSection">
             <StarTitle text="About me"></StarTitle>
 
             <div className="ContentWrapper">

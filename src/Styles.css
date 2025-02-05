@@ -5,6 +5,7 @@
 }
 * a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*синий - 006BB7*/
@@ -27,14 +28,17 @@ html, body {
 }
 .navbarWrapper nav {
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
   background-color: #006BB7;
 }
-.navbarWrapper nav a {
+.navbarWrapper nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbarWrapper nav ul li {
   color: #DFECF6;
 }
-.navbarWrapper nav a:hover {
+.navbarWrapper nav ul li:hover {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 255, 255, 0.6), 0 0 16px rgba(255, 255, 255, 0.4);
 }
 
@@ -487,10 +491,15 @@ html, body {
     margin: 0 auto;
   }
   .navbarWrapper nav {
-    justify-content: space-around;
     border-radius: 59px;
     border: 1px solid black;
     padding: 10px;
+  }
+  .navbarWrapper nav ul {
+    justify-content: space-around;
+  }
+  .navbarWrapper nav ul li {
+    font-size: 20px;
   }
   .HeroSection .HeroSectionWrapper {
     display: flex;

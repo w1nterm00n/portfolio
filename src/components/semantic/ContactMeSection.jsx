@@ -7,7 +7,7 @@ import StackedArrow from "../repetitive/StackedArrow";
 
 function ContactMeSection () {
     return (
-        <div className="ContactMeSection">
+        <div id="contact" className="ContactMeSection">
 
             <div className="circle"></div>
             
