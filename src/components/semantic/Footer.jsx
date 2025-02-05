@@ -20,7 +20,7 @@ function Footer () {
                     <div className="info">
                         <div className="year">2025</div>
                         <div className="githubLink">
-                            <a href="#!">w1nterm00n</a>
+                            <a href="https://github.com/w1nterm00n/">w1nterm00n</a>
                         </div>
                     </div>
                 </div>
