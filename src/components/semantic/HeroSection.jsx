@@ -25,7 +25,7 @@ function HeroSection () {
                 <StackedArrow></StackedArrow>
 
                 <button className="resumeBtn">
-                    <a href="#!">Download my CV as PDF</a>
+                    <a href="public/CV-Daria-Kordesova.pdf" download="Kordesova_CV.pdf">Download my CV as PDF</a>
                 </button>
             </div>
         </div>
