@@ -2,7 +2,7 @@ import triangle from "../../assets/transperent-triangle.svg";
 import viewMoreArrow from "../../assets/viewMoreArrow.svg"
 import { useState } from "react";
 
-function WorkExample () {
+function WorkExample (props) {
     const [isExpanded, setIsExpanded] = useState(false);
     
     return (
@@ -14,6 +14,7 @@ function WorkExample () {
                     <span className="corner top-right"></span>
                     <span className="corner bottom-left"></span>
                     <span className="corner bottom-right"></span>
+                    <img src={props.logoImage} alt="logo of website" />
                 </div>
 
                 <div className="nameOfWebsite">
@@ -23,11 +24,11 @@ function WorkExample () {
                         <img className="second" src={triangle} alt="triangle"/>
                     </div>
 
-                    <h4>Name of website</h4>
+                    <a href={props.linkToWebsite}>{props.nameOfWebsite}</a>
                 </div>
 
                 <p className="desc">
-                Description (blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blah)
+                    {props.websiteDescription}
                 </p>
 
                 <div className="viewMore" onClick={() => setIsExpanded(!isExpanded)}>
@@ -40,17 +41,17 @@ function WorkExample () {
 
                 {isExpanded && (
                     <div className="mobileScreen screenBorder mobileScreenDropDown">
-                    <p>мобильный скриншот сайта</p>
+                        <img src={props.mobileImage} alt="mobile screenshot" />
                     </div>
                 )}
             </div>
 
             <div className="mobileScreen screenBorder mobileScreenFlex">
-                
+                <img src={props.mobileImage} alt="mobile screenshot" />
             </div>
 
             <div className="desktopScreen screenBorder">
-                
+                <img src={props.desktopImage} alt="desktopScreen screenshot" />
             </div>
         </div>
     );
